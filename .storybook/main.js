@@ -6,11 +6,12 @@ module.exports = {
     '../src/**/*.stories.mdx',
     '../src/**/*.stories.@(js|jsx|ts|tsx)'
   ],
-  addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/addon-postcss',
-  ],
+  // https://github.com/storybookjs/storybook/issues/18801
+  //addons: [
+    //'@storybook/addon-links',
+    //'@storybook/addon-essentials',
+    //'@storybook/addon-postcss',
+  //],
   staticDirs: ['public'],
   babel: async options => ({
     ...options,
